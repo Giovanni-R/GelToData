@@ -18,12 +18,12 @@
 - The web app uses Web Workers to process the image in the background without blocking the main thread.
 - Communication with the Web Worker is typechecked. [***[see how]***][WebWorkerReadme]
 - Images are manipulated mainly through [image-js].
-- The charts are written in D3, with the code organized in hooks. [***[see the reasoning]***][D3Hooks]
+- The charts are written in D3, with the code organized in hooks. [***[see the reasoning]***][D3HooksReadme]
 - The charts displays every pixel of height and employs a custom zoom on the desktop to allow for two-finger side scrolling.
 
 
 [GelToData]: https://geltodata.web.app/
-[WebWorkerReadme]: ./Workers/README.md
+[WebWorkerReadme]: ./src/Workers/README.md
 [image-js]: https://www.npmjs.com/package/image-js
-[D3Hooks]: ./Components/Charts/README.md
+[D3HooksReadme]: ./src/Components/Charts/README.md
 [Gel electrophoresis]: https://en.wikipedia.org/wiki/Gel_electrophoresis
