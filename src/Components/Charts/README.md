@@ -2,13 +2,13 @@
 
 **Working assumptions:**
 
-React is a great tool to manage a web interface, it is also blazing fast. However in a way, its very nature gets in the way. The fact that it needs to go through a rendering step in which it resolves the state of the page (and which it may be delayed for various reasons) makes it hard to update complex charts smoothly without additional tooling.
+React is a great tool to manage a web interface, it is also blazing fast. However, in a way, its very nature gets in the way. The fact that it needs to go through a rendering step in which it resolves the state of the page (and which it may be delayed for various reasons) makes it hard to update complex charts smoothly without additional tooling.
 
 > When you have a chart with thousands of data-points, you have to just update it. Fast.
 
 D3 likes to directly manipulate the DOM to provide fast charts and animations, but in doing so it has a strong tendency to bloat and very often ends up becoming a huge interconnected mess of functions and objects.
 
-> Mixing different DOM-altering libraries is often not a good idea as they might get in each other's way, but by clearly delimiting D3's role inside hooks much of the complexity and ambiguity vanishes.
+> Mixing different DOM-altering libraries is often not a good idea as they might get in each other's way, but, by clearly delimiting D3's role inside hooks, much of the complexity and ambiguity vanishes.
 
 **What I wanted:**
 
