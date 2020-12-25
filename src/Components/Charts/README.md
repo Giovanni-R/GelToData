@@ -33,7 +33,7 @@ There was also obviously the option to go the full D3 monolith route, but that's
 The final option which I decided to go with is to build my one-chart library with hooks.
 
 **Why I decided to go with hooks:**
-- Hooks are great
+- Hooks are great.
 - Hooks allow you to take advantage of important React features, like *Refs*.
 - Hooks are a two-way street, so a 'component' can both return important values and define an interface to access the underlying elements.
 - Hooks can return refs which may be applied to a user-determined element, allowing the hook to hide the logic applied while maintaining a high degree of flexibility.
@@ -56,6 +56,8 @@ There are additional hooks which combine these base ones to provide a mid-level 
 
 - An additional limitation of this approach is that hooks must always be called in the same order. For this reason disabling only, for example, the brush (which relies on a hook) requires either bearing its computational costs and using the hook without linking it to the rest of the chart or using a wrapper component to switch between two chart variants. 
 A more complex solution might allow the hook user to disable some functionality via props, but it might result in unnecessary complexity especially considering that charts significantly different in computational cost (and thus in which this might be worth it) are usually truly different charts (as is the case with the desktop and mobile versions in this project).
+
+- Two-fingers side scrolling on the desktop is calibrated to my device and there has been no testing to make it work well across browsers, trackpads, and operating systems. The brush should work well in any configuration however.
 
 - Of note is also the fact that currently normal scrolling on mobile does not work if the touch event is initiated on the chart. This is because, by defualt, it is interpreted as panning and defaults are prevented. This can be solved only by redefining the entire touch-based pan/zoom behavior or modifying the library itself. [There's an issue on this already]
 
