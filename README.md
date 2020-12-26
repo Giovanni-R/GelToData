@@ -4,6 +4,12 @@
 
 > [Gel electrophoresis] is a technique to separate molecules depending on their size, shape, and charge. The output of its 1D variant is a distinctive set of lanes in which a number of bands may appear. It is most notoriously used to separate DNA fragments.
 
+**About this explorative side project:**
+
+- *Tagline:* easily convert a gel electrophoresis image to quantitative data.
+- *Explores:* in-browser scientific processing; visualisation of datasets of non-trivial cardinality.
+- *Features:* fully type-checked web-worker interface; custom React-D3 integration that preserves D3 speed and React composability.
+
 **How does it work?**
 1. Import an image.
 2. Select the desired pre-processing options, any change will be quickly reflected in the images and charts.
