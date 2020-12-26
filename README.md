@@ -2,7 +2,7 @@
 
 [GelToData] is a small web app which allows you to take an image of a gel electrophoresis experiment and extract the lanes as raw data.
 
-> [Gel electrophoresis] is a technique to separate molecules depending on their size and charge. The output of its 1D variant is a distinctive set of lanes in which a number of bands may appear. It is most notoriously used to separate DNA fragments.
+> [Gel electrophoresis] is a technique to separate molecules depending on their size, shape, and charge. The output of its 1D variant is a distinctive set of lanes in which a number of bands may appear. It is most notoriously used to separate DNA fragments.
 
 **How does it work?**
 1. Import an image.
