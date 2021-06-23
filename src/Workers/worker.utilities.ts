@@ -10,7 +10,10 @@ import { filterOptions } from '../definitions';
  * @param threshold the size of the threshold as fraction of the maximum [0 to 1]
  * @param normalization whether the image should be normalized
  */
-export function applyThresholdAndNormalizeImage(image: Image, threshold: number, normalization: boolean
+export function applyThresholdAndNormalizeImage(
+  image: Image,
+  threshold: number,
+  normalization: boolean
 ) {
 
   if (threshold < 0 || threshold > 1) {
@@ -143,7 +146,10 @@ export function applyThresholdAndNormalizeImage(image: Image, threshold: number,
  * @param image 
  * @param range the vertical section of the image to be included in the histogram.
  */
-export function extractHistogram(image: Image, range: number[], selectedChannels: boolean[]
+export function extractHistogram(
+  image: Image,
+  range: number[],
+  selectedChannels: boolean[]
 ): number[][] {
 
   const width = image.width;
@@ -267,7 +273,10 @@ export function getGreyImage(image: Image, selectedChannels: boolean[]) {
  * @param filters 
  * @param selectedChannels 
  */
-export function applyFilters(image: Image, filters: filterOptions[], selectedChannels: boolean[]
+export function applyFilters(
+  image: Image,
+  filters: filterOptions[],
+  selectedChannels: boolean[]
 ) {
 
   for (const filter of filters) {

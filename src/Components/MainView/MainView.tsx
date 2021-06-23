@@ -28,7 +28,7 @@ enum Status {
 }
 
 /**
- * This component contains the gel analysis interface and logicm plus the
+ * This component contains the gel analysis interface and logic plus the
  * display of the lane charts.
  * 
  * Props:

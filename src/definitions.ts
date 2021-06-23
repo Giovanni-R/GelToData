@@ -144,14 +144,18 @@ export const OVERLAY_Z_INDEX = 10000;
 export const ACCEPTED_FILE_TYPES = ["image/jpg", "image/jpeg", "image/png", "image/tiff"];
 
 /**
- * Exctly the same as useEffect, but with 0 dependencies.
- * Makes the fact that the effect will execute only upon muonting clear and avoids lining warnings.
+ * Exactly the same as useEffect, but with 0 dependencies.
+ * Makes the fact that the effect will execute only once upon mounting 
+ * (as there are no changing dependency values) clear and avoids linting warnings.
  * @param callback 
  */
+// eslint-disable-next-line react-hooks/exhaustive-deps
 export const useMountEffect = (callback: () => (void | (() => void | undefined))) => useEffect(callback, [])
 /**
- * Exctly the same as useLayoutEffect, but with 0 dependencies.
- * Makes the fact that the effect will execute only upon muonting clear and avoids lining warnings.
+ * Exactly the same as useLayoutEffect, but with 0 dependencies.
+ * Makes the fact that the effect will execute only once upon mounting 
+ * (as there are no changing dependency values) clear and avoids linting warnings.
  * @param callback 
  */
+// eslint-disable-next-line react-hooks/exhaustive-deps
 export const useMountLayoutEffect = (callback: () => (void | (() => void | undefined))) => useLayoutEffect(callback, [])

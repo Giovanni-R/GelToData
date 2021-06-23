@@ -109,7 +109,7 @@ export function useWorker
    */
   const workerRef: MutableRefObject<Worker | null> = useRef<Worker>(null);
   /**
-   * A helper function whcih provides access to the worker.
+   * A helper function which provides access to the worker.
    */
   const getWorker = useCallback(() => {
     if (workerRef.current === null) {
@@ -198,11 +198,5 @@ export function getEmptyWorkerContext
     (subscription: S) => void,
     (update: I) => void,
   ] {
-  const temp1: (subscription: S) => void = () => { };
-  const temp2: (update: I) => void = () => { };
-  const tempContext: [
-    (subscription: S) => void,
-    (update: I) => void,
-  ] = [temp1, temp2];
-  return tempContext;
+  return [() => { }, () => { }];
 }
