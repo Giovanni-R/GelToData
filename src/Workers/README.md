@@ -1,5 +1,7 @@
 # On this Web Worker implementation:
 
+> This interface has been reused and improved [here](https://github.com/QuartzLibrary/schema_analysis/tree/master/website/src/Workers).
+
 **Why:**
 
 I decided to implement this Web Worker interface for two main reasons:
